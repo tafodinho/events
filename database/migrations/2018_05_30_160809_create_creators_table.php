@@ -15,6 +15,11 @@ class CreateCreatorsTable extends Migration
     {
         Schema::create('creators', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('avatar_id');
+            $table->string('name');
+            $table->string('eimail');
+            $table->string('gender');
+            $table->string('age_group');
             $table->timestamps();
         });
     }
